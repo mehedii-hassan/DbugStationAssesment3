@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">DbugStationAssesment3</string>
+    <string-array name="CategoryNames">
+        <item>Poster</item>
+        <item>Neon</item>
+        <item>Wings</item>
+        <item>Drip</item>
+        <item>Neon</item>
+        <item>Wings</item>
+        <item>Drip</item>
+    </string-array>
 </resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#012945">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPoster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPosterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Poster"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivPoster"
+                app:layout_constraintStart_toStartOf="@+id/ivPoster"
+                app:layout_constraintTop_toBottomOf="@+id/ivPoster" />
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPosterName" />
+
+            <TextView
+                android:id="@+id/tvTotalDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Total downloads"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/ivArrow"
+                app:layout_constraintStart_toEndOf="@id/ivArrow"
+                app:layout_constraintTop_toTopOf="@+id/ivArrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:text="2.7k"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTotalDownload"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTotalDownload" />
+
+            <TextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Size"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/tvTotalDownload"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalDownload" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_1000001679"
+                app:backgroundTint="#0d081a"
+                app:fabSize="mini"
+                app:layout_constraintStart_toStartOf="@+id/ivPoster"
+                app:layout_constraintTop_toTopOf="@id/ivPoster"
+                app:tint="#fb9b03" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel"
+                app:backgroundTint="#0d081a"
+                app:fabSize="mini"
+                app:layout_constraintEnd_toEndOf="@+id/ivPoster"
+                app:layout_constraintTop_toTopOf="@id/ivPoster"
+                app:tint="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#006cbc"
+                android:text="Download"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
